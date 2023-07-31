@@ -8,7 +8,6 @@ type ButtonProps = {
   big?: boolean;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
-// prettier-ignore
 const Button: FC<ButtonProps> = ({
 	                                 bgColor,
 	                                 children,
