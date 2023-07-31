@@ -1,0 +1,19 @@
+.ui-checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  border: 1px solid #D9D9D9;
+  transition: all 0.2s ease-in-out;
+  text-align: center;
+  appearance:none;
+  cursor: pointer;
+}
+
+.ui-checkbox:checked {
+  background-color: #93C6E4;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.ui-checkbox:checked:after {
+  content: '\2714';
+  color:white;
+}
