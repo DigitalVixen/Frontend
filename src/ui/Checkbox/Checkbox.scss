@@ -7,13 +7,15 @@
   text-align: center;
   appearance:none;
   cursor: pointer;
-}
-
-.ui-checkbox:checked {
-  background-color: #93C6E4;
-  border: 1px solid rgba(0, 0, 0, 0);
-}
-.ui-checkbox:checked:after {
-  content: '\2714';
-  color:white;
+  &:hover {
+    background-color: #fbfbfb;
+  }
+  &:checked {
+    background-color: #93C6E4;
+    border: 1px solid rgba(0, 0, 0, 0);
+  }
+  &:checked:after {
+    content: '\2714';
+    color:white;
+  }
 }
