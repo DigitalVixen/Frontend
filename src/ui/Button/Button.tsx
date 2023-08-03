@@ -1,15 +1,17 @@
 import React, { ButtonHTMLAttributes, FC } from 'react';
 import './Button.scss';
 
-type ButtonProps = {
-  bgColor: string;
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  bgColor?: string;
+	color?: string;
   small?: boolean;
   medium?: boolean;
   big?: boolean;
-} & ButtonHTMLAttributes<HTMLButtonElement>;
+}
 
 const Button: FC<ButtonProps> = ({
-	                                 bgColor,
+	                                 bgColor = '#000',
+                                   color = '#fff',
 	                                 children,
 	                                 small,
 	                                 medium,
@@ -29,7 +31,7 @@ const Button: FC<ButtonProps> = ({
 	}
 	
 	return (
-		<button {...props} style={{backgroundColor: bgColor}} className={rootClasses.join(' ')}>
+		<button {...props} style={{backgroundColor: bgColor, color}} className={rootClasses.join(' ')}>
 			{children}
 		</button>
 	);
