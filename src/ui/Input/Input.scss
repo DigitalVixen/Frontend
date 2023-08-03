@@ -1,0 +1,16 @@
+.ui-input {
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  border: 1px solid #E4E4E4;
+  padding: 0 10px;
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: #fbfbfb;
+  }
+  &:focus {
+    background-color: #fff;
+  }
+}
