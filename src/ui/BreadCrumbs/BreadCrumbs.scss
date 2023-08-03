@@ -1,0 +1,25 @@
+.ui-breadcrumbs {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  &__el {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+  &__crumb {
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.1s ease-in-out;
+    color: #6E6E6E;
+    &:hover {
+      color: #6AB9E6;
+    }
+  }
+  &__dot {
+    background-color: #6E6E6E;
+    width: 3px;
+    height: 3px;
+    border-radius: 100%;
+  }
+}
