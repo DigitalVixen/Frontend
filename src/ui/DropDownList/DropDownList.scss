@@ -1,0 +1,87 @@
+.dropdown {
+  position: relative;
+  width: 180px;
+  &.open {
+    .dropdown__arrow {
+      transform: rotate(180deg) scaleX(-1);
+    }
+  }
+  &__management {
+    display: flex;
+    align-items: center;
+    svg {
+      width: 20px;
+      height: 20px;
+      color: #D9D9D9;
+    }
+  }
+  &__arrow {
+    transition: all 0.1s ease;
+    display: flex;
+    align-items: center;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7px 0 10px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #D9D9D9;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 100%;
+    cursor: pointer;
+    user-select: none;
+    z-index: 300;
+    color: #4E4E4E;
+    background-color: #fff;
+    span {
+      white-space: nowrap; /* Текст не переносится */
+      overflow: hidden; /* Обрезаем всё за пределами блока */
+      text-overflow: ellipsis;
+    }
+    &:hover {
+      background-color: #fbfbfb;
+    }
+    &:active {
+      background-color: #fff;
+    }
+  }
+  &__body {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 300;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  li {
+    text-align: start;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 10px;
+    line-height: 20px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    span {
+      white-space: nowrap; /* Текст не переносится */
+      overflow: hidden; /* Обрезаем всё за пределами блока */
+      text-overflow: ellipsis;
+    }
+    &:hover {
+      background-color: #EDEDED;
+      //color: #fff;
+    }
+  }
+}
