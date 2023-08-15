@@ -6,6 +6,7 @@
   ],
   "plugins": ["prettier"],
   "rules": {
+    "prettier/prettier": "warn",
     "no-console": "warn",
     "quotes": ["warn", "single"],
     "jsx-quotes": ["warn", "prefer-double"],

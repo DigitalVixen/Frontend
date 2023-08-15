@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 
 import { useTypedSelector } from './hooks/useTypedSelector';
 import { useActions } from './hooks/useActions';
+import Login from './pages/Login/Login';
+import Registration from './pages/Registration/Registration';
 
 const App = () => {
   const { user } = useTypedSelector((state) => state.user);
@@ -14,7 +16,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <pre>{JSON.stringify(user, null, 2)}</pre>
+      <Registration />
+      <Login/>
     </div>
   );
 };
