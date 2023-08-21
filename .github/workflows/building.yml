@@ -13,11 +13,10 @@ jobs:
         with:
           node-version: 18.x
         
-      - name: Install dependencies
-        run: npm ci
-      
-      - name: Build project
-        run: npm run build
+      - name: Install dependencies and build project
+        run: | 
+          npm ci
+          npm run build --if-present
       
       - name: SSH-KEY
         uses: shimataro/ssh-key-action@v2
