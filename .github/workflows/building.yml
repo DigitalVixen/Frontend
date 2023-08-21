@@ -19,3 +19,5 @@ jobs:
           with:
             local: build
             remote: /var/www/digitalvixen/
+            host: ${{ secrets.SSH_HOST }}
+            private_key: ${{ secrets.SSH_PRIVATE_KEY }}
