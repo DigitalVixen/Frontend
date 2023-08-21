@@ -1,8 +1,5 @@
 name: Build and deploy React App
-on:
-  push:
-    branches:
-      - dev
+on: push
 jobs:
   test:
     runs-on: ubuntu-latest
