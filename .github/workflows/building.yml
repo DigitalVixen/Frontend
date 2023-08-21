@@ -19,9 +19,9 @@ jobs:
       - name: Build project
         run: | 
           npm run build --if-present
-    deploy:
-      runs-on: ubuntu-latest
-      steps:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
       - name: SSH-KEY
         uses: shimataro/ssh-key-action@v2
         with:
