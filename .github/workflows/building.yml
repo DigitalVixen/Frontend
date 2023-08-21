@@ -22,4 +22,4 @@ jobs:
         run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
       - name: Deploy with rsync
-          run: rsync -avz . -e "ssh -i $HOME/.ssh/id_rsa" root@${{ secrets.SSH_HOST }}:/var/www/digitalvixen/
+        run: rsync -avz . -e "ssh -i $HOME/.ssh/id_rsa" root@${{ secrets.SSH_HOST }}:/var/www/digitalvixen/
