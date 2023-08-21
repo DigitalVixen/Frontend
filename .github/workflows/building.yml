@@ -15,7 +15,7 @@ jobs:
         
       - name: Install dependencies and build project
         run: | 
-          npm ci
+          npm install
           npm run build --if-present
       
       - name: SSH-KEY
