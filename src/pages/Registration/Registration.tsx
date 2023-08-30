@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
 
 import RegistrationForm from '../../modules/authorization/components/RegistrationForm/RegistrationForm';
-import RedirectPart from "../../modules/authorization/components/LeftPart/RedirectPart";
+import RedirectPart from '../../modules/authorization/components/RedirectPart/RedirectPart';
 
-import "./Registration.scss"
+import './Registration.scss';
 
 const Registration: FC = () => {
   return (

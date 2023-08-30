@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 
 import LoginForm from '../../modules/authorization/components/LoginForm/LoginForm';
-import RedirectPart from '../../modules/authorization/components/LeftPart/RedirectPart';
+import RedirectPart from '../../modules/authorization/components/RedirectPart/RedirectPart';
 
 import './Login.scss';
 

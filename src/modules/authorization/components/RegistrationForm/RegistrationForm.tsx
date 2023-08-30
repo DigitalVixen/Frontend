@@ -3,9 +3,9 @@ import React, { FC, useState } from 'react';
 import { useActions } from '../../../../hooks/useActions';
 import Title from '../../UI/Title/Title';
 import Input from '../../../../ui/Input/Input';
-import Button from "../../../../ui/Button/Button";
+import Button from '../../../../ui/Button/Button';
 
-import "./RegistrationForm.scss"
+import './RegistrationForm.scss';
 
 const RegistrationForm: FC = () => {
   const [username, setUsername] = useState('');
