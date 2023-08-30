@@ -21,11 +21,7 @@ const LoginForm: FC = () => {
         <Title>Войти в личный кабинет</Title>
         <div className="container-login-form__inputs">
           <Input onChange={(e) => setUsername(e.target.value)} value={username} placeholder="Имя пользователя" />
-          <Input
-            onChange={(e) => setPassword(e.target.value)}
-            value={password}
-            placeholder="Пароль"
-          />
+          <Input onChange={(e) => setPassword(e.target.value)} value={password} placeholder="Пароль" />
         </div>
         <div className="container-login-form__button">
           <Button onClick={() => login(username, password)} medium={true} bgColor="#93C6E4">
