@@ -1,6 +1,5 @@
 import React, { ButtonHTMLAttributes, FC, useState } from 'react';
-// import { CiShoppingCart } from 'react-icons/ci';
-// import { ReactComponent as Cart } from '../../img/cart.svg';
+import { ReactComponent as Cart } from '../../img/cart.svg';
 import './ButtonCart.scss';
 
 interface ButtonCartProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -16,7 +15,7 @@ const ButtonCart: FC<ButtonCartProps> = ({ initialSelected = false, ...props }) 
   }
   return (
     <div className={rootClasses.join(' ')} onClick={() => setSelected(!selected)}>
-      {/*<button {...props}>{selected ? <Cart /> : <CiShoppingCart />}</button>*/}
+      <button {...props}>{selected ? <Cart /> : <Cart />}</button>
     </div>
   );
 };
