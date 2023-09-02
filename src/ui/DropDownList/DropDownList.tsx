@@ -1,5 +1,5 @@
 import React, { FC, useState } from 'react';
-import { IoIosArrowDown, IoMdClose } from 'react-icons/io';
+// import { IoIosArrowDown, IoMdClose } from 'react-icons/io';
 
 import OutsideClickHandler from '../../components/OutsideClickHandler';
 import './DropDownList.scss';
@@ -30,12 +30,12 @@ const DropDownList: FC<DropDownListProps> = ({ initialValue, selected, setSelect
       <OutsideClickHandler onOutsideClick={setIsOpen}>
         <div onClick={toggleDropdown} className="dropdown__top">
           <span>{selected ? selected : initialValue}</span>
-          <div className="dropdown__management">
-            {selected && <IoMdClose onClick={() => setSelected('')} />}
-            <div className="dropdown__arrow">
-              <IoIosArrowDown />
-            </div>
-          </div>
+          {/*<div className="dropdown__management">*/}
+          {/*  {selected && <IoMdClose onClick={() => setSelected('')} />}*/}
+          {/*  <div className="dropdown__arrow">*/}
+          {/*    <IoIosArrowDown />*/}
+          {/*  </div>*/}
+          {/*</div>*/}
         </div>
         {isOpen && (
           <div className="dropdown__body">

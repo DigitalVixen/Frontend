@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react';
 
-import { IoIosArrowDown } from 'react-icons/io';
+// import { IoIosArrowDown } from 'react-icons/io';
 
 import OutsideClickHandler from '../../components/OutsideClickHandler';
 import './DropDownListImage.scss';
@@ -39,7 +39,7 @@ const DropDownListImage: FC<DropDownListImageProps> = ({ parent, selected, setSe
             <span>{text}</span>
           </div>
           <div className="ui-dropdown-list-image__arrow">
-            <IoIosArrowDown />
+            {/*<IoIosArrowDown />*/}
           </div>
         </div>
         {isOpen && (

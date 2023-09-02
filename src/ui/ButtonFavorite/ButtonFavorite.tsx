@@ -1,5 +1,5 @@
 import React, { ButtonHTMLAttributes, FC, useState } from 'react';
-import { PiHeartStraightLight, PiHeartStraightFill } from 'react-icons/pi';
+// import { PiHeartStraightLight, PiHeartStraightFill } from 'react-icons/pi';
 import './ButtonFavorite.scss';
 
 interface ButtonFavoriteProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -15,7 +15,7 @@ const ButtonFavorite: FC<ButtonFavoriteProps> = ({ initialSelected = false, ...p
   }
   return (
     <div className={rootClasses.join(' ')} onClick={() => setSelected(!selected)}>
-      <button {...props}>{selected ? <PiHeartStraightFill /> : <PiHeartStraightLight />}</button>
+      {/*<button {...props}>{selected ? <PiHeartStraightFill /> : <PiHeartStraightLight />}</button>*/}
     </div>
   );
 };
