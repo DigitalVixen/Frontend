@@ -1,0 +1,33 @@
+.icon-button {
+  cursor: pointer;
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  & svg {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+  }
+  &__text {
+    color: #4E4E4E;
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  @media (max-width: 992px) {
+    &__text {
+      display: none;
+    }
+  }
+  @media (max-width: 576px) {
+    & svg {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}

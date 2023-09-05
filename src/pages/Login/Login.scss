@@ -1,0 +1,16 @@
+.login {
+    min-height: 660px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 58% 42%);
+    &__redirect {
+        min-height: 660px;
+        left: 58%;
+        right: 0;
+    }
+    @media (max-width: 992px) {
+        display: flex;
+        align-items: center;
+        min-height: 100%;
+    }
+}
